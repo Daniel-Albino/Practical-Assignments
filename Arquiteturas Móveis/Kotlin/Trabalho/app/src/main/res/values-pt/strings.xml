@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="singleplayer">Um Jogador</string>
+    <string name="multiplayer">Multijogador</string>
+    <string name="profile">Perfil</string>
+    <string name="username">Nome</string>
+    <string name="update">Atualizar</string>
+    <string name="msg_empty_username">Por favor insira um nome</string>
+    <string name="server_mode">Modo servidor</string>
+    <string name="client_mode">Modo jogador</string>
+    <string name="credits">Créditos</string>
+    <string name="level">NÍVEL</string>
+    <string name="seconds">segundos</string>
+    <string name="points">pontos</string>
+    <string name="points2">Pontos</string>
+    <string name="expressions_missing">expressões em falta</string>
+    <string name="new_level">Novo nível</string>
+    <string name="level_dialog">Nível</string>
+    <string name="pause_game_dialog">Pretende pausar o jogo?</string>
+    <string name="pause_resume_dialog">Quer continuar o jogo?</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="leave_game_dialog">Quer mesmo sair?</string>
+    <string name="game_over_dialog">Fim do jogo</string>
+    <string name="game_over_points_dialog">O jogo terminou e os seus pontos são</string>
+    <string name="new_game">Novo Jogo</string>
+    <string name="exit">Sair</string>
+    <string name="time">tempo</string>
+    <string name="time2">Tempo</string>
+    <string name="server_ip">Endereço IP do servidor:</string>
+    <string name="server_wait_client">À espera de um cliente…</string>
+    <string name="connect">Conectar</string>
+    <string name="connect_emulator">Ligar ao emulador</string>
+    <string name="cancel">Cancelar</string>
+    <string name="wait_players_dialog">Por favor aguarde até que todos os jogadores terminem o nível</string>
+    <string name="toast_profile">Não tem nenhum perfil criado</string>
+    <string name="no_data_available">Sem dados</string>
+</resources>

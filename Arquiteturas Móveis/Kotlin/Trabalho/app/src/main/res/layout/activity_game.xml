@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:id="@+id/LLTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="@string/level"
+                android:textColor="@color/red"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/red"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/seconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                android:gravity="center"
+                android:text="@string/seconds"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_baseline_emoji"
+                android:gravity="center"
+                android:text="@string/points"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/expressionsMissing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="@string/expressions_missing"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/LLTop"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp">
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/profile_photo1"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:background="@drawable/default_profile" />
+            <TextView
+                android:id="@+id/profile_username1"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:textAlignment="center"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/profile_points1"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:text="@string/points"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:textSize="12sp"/>
+        </LinearLayout>
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/profile_photo2"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:background="@drawable/default_profile" />
+            <TextView
+                android:id="@+id/profile_username2"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:textAlignment="center"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/profile_points2"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:text="0 Points"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:textSize="12sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/profile_photo3"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:background="@drawable/default_profile" />
+            <TextView
+                android:id="@+id/profile_username3"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:textAlignment="center"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/profile_points3"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:text="0 Points"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:textSize="12sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/profile_photo4"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:background="@drawable/default_profile" />
+            <TextView
+                android:id="@+id/profile_username4"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:textAlignment="center"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/profile_points4"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:text="0 Points"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:textSize="12sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/profile_photo5"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:background="@drawable/default_profile" />
+            <TextView
+                android:id="@+id/profile_username5"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:textAlignment="center"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/profile_points5"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:text="0 Points"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:textSize="12sp"/>
+        </LinearLayout>-->
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flGRV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <GridView
+            android:id="@+id/idGV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="5" />
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <GridView
+        android:id="@+id/idGVcourses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="5"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/lyTimePoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/idGRV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        tools:ignore="NotSibling">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u2764 2 vidas"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 segundos"
+            android:drawableLeft="@drawable/ic_baseline_access_time_24"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\uD83C\uDFB2 10 pontos"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flGRV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lyTimePoint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="20dp"
+        >
+
+        <GridLayout
+            android:id="@+id/idGRV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="0dp"
+            android:numColumns="5"
+
+            />
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>-->

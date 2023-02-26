@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "241927472553",
+    "project_id": "game-tp-am",
+    "storage_bucket": "game-tp-am.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241927472553:android:4cf033af8288d5aed7f0b8",
+        "android_client_info": {
+          "package_name": "pt.isec.tp_am"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241927472553-hr94f6kh5sema4cdaae5gaiho43ggum8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pt.isec.tp_am",
+            "certificate_hash": "a47fbe166cdd80d7e2bbc854fade25551c88921e"
+          }
+        },
+        {
+          "client_id": "241927472553-kgsnb15oha743s11t7cpmf4201l64qer.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn6WhxRZb7wLQtPcM9UHzZ94uvrQS90Is"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241927472553-kgsnb15oha743s11t7cpmf4201l64qer.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
