@@ -1,0 +1,253 @@
+{
+	"info": {
+		"_postman_id": "92c2f936-3556-422c-b8ca-006dba0dac4a",
+		"name": "TPPOSTMAN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login Admin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "basic YWRtaW46YWRtaW4=",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"admin\",\r\n    \"password\":\"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Get utilizadores",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE2NzIxNzU3NzYsImlhdCI6MTY3MjE3MjE3Niwic2NvcGUiOiJBRE1JTiJ9.dlPr3FO_74_tbSVeZO_Cu3HH6SguYqi2IqOMtlbojcBd9c-V_Sohqxg1vCAE7XPHVTOfXB57YdA8nUmrf-vQUXVuQ-oGAuqWJr_uRWsxzSTVUc1ccZVdZJmQ1E3oqFAay4qHSOA1jxh3OO3gbKIIg7I_j0vmRVwHEJCxDNxRnu3YuJL5t-1z0EcgJ_qsjt2McmLRFULqBvvhoPjEI2lr-q0ariw1dJfprLJ0HF4fta7alYJHBiYe_ANTYgOoXSXNrIBHUdOCyMNE6ak4DSVWncCsMHOG_mKACSughTNJ5kxpVJ_r2hlofn7iQ2vetOVvU4r-_BNDeSWVGSrFIJq8lg",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/utilizador/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"utilizador",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Client",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "basic YTph",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client Get utilizadores(ERROR)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYSIsImV4cCI6MTY3MjE3NTc4OCwiaWF0IjoxNjcyMTcyMTg4LCJzY29wZSI6IkNMSUVOVCJ9.KBOgYVKo6BFW6I_A474wv3qAFqPWbEVNdL6lKFg1HXoLDC0Av6uxMbIrzBsb5sWjLQfFgrfDuPxuCdoRQ8Huyrliv8dK6IUSJ5QJKmEI8QfdqHdlGsovejcXY717vr2jSc4k59ma3-rqXThHrJqI6aaKNrqXRod4TV2WVvfXmv3EwmGoSSSJbzc0vpOPsH9yekLmASwfcZ1HbRe2l4YdNK3Zd-j5iS0goB65it7KMmlO2qtyy9sdWs4lWycVySPqkVz6Nx_ulZzRtHaorIc6cVZ9XQCLER2IKu3tukhRrNfU-mmJafLT8Rti_buTJicGF-qP26DrtjsQ0a0375xFBg",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/utilizador/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"utilizador",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Utilizador com Admin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE2NzIyNTMwNjcsImlhdCI6MTY3MjI0OTQ2Nywic2NvcGUiOiJBRE1JTiJ9.h8aTdS3PYvTgOhq4Tae1v1mH61Ndv6xaBoCfJTPgioS4w-lOg-u8g4JJWyZgvnsrjl619XGq9QzygBRhf-1116Ht7hITLdiMGSQkAWcRMgpq5_y8AUKiAXpvu2HenCxVw0X4zrHzVG6wCuFxeBtahYdCPyAkQh29aMePNHgHTn3AYLckvhKA9kYNAcM8ozNDs3jRBa5rUAhmh4tx_Cb_CC_7ZEg_uC2Sjkb3wcZuDf1GOAbIrnXnx-WtbmHAQQkMSfgyBi6t5QUFBglRlgNgW_Lihg8yYOLIXULO161WhSPFTKkSqFJrhYNHcpy1uFbBa5CUDXlU44Uc45NjhK5v5g",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"tert\",\r\n    \"nome\":\"ert\",\r\n    \"password\":\"q\",\r\n    \"administrador\": 0,\r\n    \"autenticado\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/utilizador",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"utilizador"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Procurar espetaculos(com filtro)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE2NzIyNTcxMDksImlhdCI6MTY3MjI1MzUwOSwic2NvcGUiOiJBRE1JTiJ9.IZbl5oi7e4vwQgqjqvZwUG_SwyAVuojznkExH88xKRt_2_evPY1Thg9NLYxzENb0P4SS9o_UYOD33_a59Q_6nvIWu1opeq54I6qiXHNKJqwCgjKTZBH3wnY3ARx6P6RtPqF3ORWXc-QdGzcYGKspOttjljq-a0BWeLRrU_q2sIJYigp_TYqj1HIFH3sbXRklZRYhla2UKMpiqHzMHsyru8ncNeHIFTvGl4pTL4JpeeqQVPWiaZVRZN0lDk82O1g9jUcBJuWVKJ3S_3To09IOLtlLg5kYqaR3-FY2QJCdxplH_cBGrkjOIGyJ3yg7aeXy4D3othR1vj4_ql4l4VQmiQ",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/espetaculo/all?datainicio=12/05/2022&datafim=15/05/2023",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"espetaculo",
+						"all"
+					],
+					"query": [
+						{
+							"key": "datainicio",
+							"value": "12/05/2022"
+						},
+						{
+							"key": "datafim",
+							"value": "15/05/2023"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Apagar utilizador com id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYSIsImV4cCI6MTY3MjMzMzM2NCwiaWF0IjoxNjcyMzI5NzY0LCJzY29wZSI6IkNMSUVOVCJ9.KeT84Y-ubNMTgrBXZZyzqK5L7ltEF3nFk_-jFSebr1t574fvXXeFmHsyHBnA03M5jUlyYDI-75evs4_u0xyrHRF8NydxCuepuZPI9wAvdEyvwsDH-3ZFzrYxj_ZWBBr3FoZ6PMCJssO3ZCqNgA2bvkqzdRhqFn61VS2-IyM98YgXN9aAnqf3pNcZmx4ICRbzDagci99TDppGBJRRoHy7NFzjLe1WsZJOjQ0RPtv-fp5daqKR8mTdxl6kxsA8j1FJZ5SOtWb1qPYmnViUyXH_PvpJHs5IbYfHsud3rZx9264JenBhoIaecaAE2U0W6O-feGllMhBABZtnDn_xRDkvbA",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/utilizador/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"utilizador",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tentativa de login de utilizador não registado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "basic YTph",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
