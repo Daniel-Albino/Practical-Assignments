@@ -1,0 +1,48 @@
+.button {
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-font-weight: bold;
+    -fx-font-size: 16;
+}
+
+.label {
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+
+#labelnome{
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-font-size: 28;
+}
+
+#Special {
+    -fx-font-family: "Courier New";
+    -fx-font-weight: bold;
+    -fx-font-size: 50;
+}
+
+#credits{
+    -fx-font-family: "Tw Cen MT Condensed Extra Bold";
+    -fx-font-weight: bold;
+    -fx-font-size: 16;
+}
+
+#dateLabel{
+    -fx-font-family: "Calibri";
+    -fx-font-size: 15;
+}
+
+.SpecialBox{
+    -fx-hgap: 10px;
+    -fx-padding: 5px;
+
+    -fx-background-color: #5f7ca6;
+    -fx-background-radius: 10px;
+
+    -fx-border-radius: 10px;
+    -fx-border-width: 2px;
+    -fx-border-color: rgba(0, 0, 0, 0.26);
+
+}
