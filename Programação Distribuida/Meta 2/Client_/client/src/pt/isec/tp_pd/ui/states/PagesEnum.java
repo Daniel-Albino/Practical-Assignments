@@ -1,0 +1,5 @@
+package pt.isec.tp_pd.ui.states;
+
+public enum PagesEnum {
+    SIGNUP,LOGIN,ORDERS,RESERVE,NONE,USERCHANGE,SEARCHSH,UPLOADFILE,REQUESTADMIN,ELIMINAESPE
+}
