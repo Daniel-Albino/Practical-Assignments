@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/Utilizador/Desktop/Prog_DanielAlbino_2020134077/tabuleiro.c
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+tabuleiro.h
+/cygdrive/c/Users/Utilizador/Desktop/Prog_DanielAlbino_2020134077/tabuleiro.h
+
+/cygdrive/c/Users/Utilizador/Desktop/Prog_DanielAlbino_2020134077/tabuleiro.h
+
