@@ -1,0 +1,66 @@
+label{
+    font-family: Arial;
+    color:rgba(255, 255, 255, 0.904);
+    margin-left:100px;
+}
+#titulo{
+        background-color:rgb(179, 179, 179)
+        
+}
+fieldset{
+    background-color:  rgb(179, 179, 179);
+    display:flex; 
+    display:block; 
+    margin-top:50px;
+    margin-left:50px; 
+    margin-right:50px;
+    padding: 15px 50px;
+    margin-bottom: 50px;
+    
+}
+#male{margin-left: 10px;}
+#female{margin-left:10px}
+.espaço{
+    background-color:white;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-color: rgb(82, 80, 80);
+    margin-top: 10px;
+}
+#submit{border-radius: 15px;
+        width: 300px;
+        height:30px;
+        margin-left:38%;
+        background-color: antiquewhite;}
+.campo7{margin-left: 100px;}
+.select{color:rgba(255, 255, 255, 0.904);
+    margin-left:5px;}
+select{margin-left: 100px;}
+.email{display: inline;}
+@media screen and (max-width:1236px){
+    .email{display:block;
+        margin-top:10px;}
+    .espaço{margin-top: 0px;}
+    fieldset {margin-right: 50px;}
+    label{margin-left: 50px;}
+    .campo7{margin-left: 50px;}
+    #selecionar{margin-left: 50px;}
+    #submit{margin-left: 28%;}
+    footer img{height: 50%;}
+}
+@media screen and (max-width:1020px){
+    #caixadetexto{width:50%;}
+    .campo7{margin-left: 10px;}
+    label{margin-left: 10px;}
+    #selecionar{margin-left: 10px;}
+    #submit{margin-left: 18%;}
+    .espaço, .email{width:50%;}
+}
+@media screen and (max-width:615px){
+    #submit{
+        width: 50%;}
+}
+@media screen and (max-width:585px){
+    #male, #female{display:block;}
+}

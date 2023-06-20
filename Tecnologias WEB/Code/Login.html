@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/ICON.png">
+	<link rel="stylesheet" href="Loginstyle.css">  
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>USF-Login</title>
+
+</head>
+<body>	
+	
+<div id="global">   
+  <div id="logo">
+	  <img src="img/icon_principal.JPG" width="150" >
+  </div>
+	  <br>
+<h4>Faça login para aceder á sua área de utente</h4>
+<div id="container">
+	<form name="login" method="POST">
+
+	 <label for="nome">Nome de utilizador</label><br>
+	 <input class="form-element" type="text" id="utilizador" name="utilizador" size="35" required/><br><br>
+
+	 <lable for="password">Senha</lable><br>
+	 <input class="form-element" type="password" id="password" name="password" size="35" required/><br><br>
+
+	 <input id="elem_sub" type="button" value="Login" onclick="verify(this.form)"/><br>
+	 <input type="button" value="Registar" id="registar" onclick="location.href='Registo.html'"/>
+ </form>
+</div>
+
+<script src="login.js"></script>
+
+    
+</body>
+</html>
+

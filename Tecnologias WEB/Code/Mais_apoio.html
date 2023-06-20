@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/ICON.png">
+    <link rel="stylesheet" href="Barstyle.css">
+    <link rel="stylesheet" href="stylebar.css">  
+    <link rel="stylesheet" href="Mais_apoio.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Mais- Apoio</title>
+
+</head>
+<body>
+<!--Inicio da barra de navegação-->
+<div>
+    <img id="logo" src="img/icon_principal.JPG" alt="USF Marquês/São Martinho" width="250" height="100">
+  </div>
+  <div id="bar">
+  <div class="topnav" id="myTopnav">
+    <a href="Pagina_inicial.html" class="active">Início</a>
+    <a href="Quem somos.html">Quem somos</a>
+    <div class="dropdown">
+      <button class="dropbtn">O que fazemos
+        <span class="fa fa-caret-down"></span>
+      </button>
+      <div class="dropdown-content">
+        <a href="O que fazemos.html">O que fazemos</a>
+        <a href="Fazemos_consultas.html">Consultas</a>
+      </div>
+    </div> 
+    <a href="Indicadores.html">Indicadores da USF</a>
+    <a href="Recursos.html">Recursos</a>
+    <div class="dropdown">
+      <button class="dropbtn">Mais
+        <span class="fa fa-caret-down"></span>
+      </button>
+      <div class="dropdown-content">
+        <a href="Mais_apoio.html">Apoio</a>
+        <a href="Mais_informações.html">Informações</a>
+      </div>
+    </div> 
+    <a href="e_consulta.html">E-consulta</a>
+    <a href="Login.html" target="_blank" id="medialogin"><span class="fa fa-fw fa-user"></span>Login</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  <!--Fim da barra de navegação-->
+<div id="apoio">
+    <h2 class="title_apoio">Linhas de Apoio</h2><br>
+    <ul>
+        <a href="https://www.dgs.pt/" target="_blank"><li class="title_apoio" title="Direção-Geral de Saúde">DGS</li></a>
+        <div class="flex_apoio">
+        <img src="img/DGS.png" width="200">
+        <p>Alameda D. Afonso Henriques, 45,<br> 1049-005 Lisboa - Portugal<br><br>
+          Tel: 21 843 05 00 <br>E-mail: geral@dgs.min-saude.pt
+          </p>
+        </div>
+        <a href="https://www.sns24.gov.pt/contacte-nos/" target="_blank"><li class="title_apoio">Saúde 24</li></a>
+        <div class="flex_apoio">
+        <img src="img/Saúde 24.png" width="200">
+        <p>Linha de apoio: 808 24 24 24</p>
+      </div>
+        <a href="https://www.sns24.gov.pt/contacte-nos/" target="_blank"><li class="title_apoio" title="Serviço nacional de saúde">SNS</li></a>
+        <div class="flex_apoio">
+        <img src="img/SNS.png" width="200">
+        <p>Telefone: 234 210 030</p>
+      </div><br>
+        <a href="https://www.inem.pt/" target="_blank"><li class="title_apoio" title="Instituto nacional de emergência médica">INEM</li></a>
+        <div class="flex_apoio">
+        <img src="img/INEM.png" width="200">
+        <p>Estrada de Eiras, 259 - 2º Andar<br>
+          3020-199 Coimbra<br>
+          Telefone: 239 797 800 | Fax: 239 797 825<br><br>
+          <strong>Número de emergência:112</strong></p>
+        </div>
+        <a href="https://www.cruzvermelha.pt/" target="_blank"><li class="title_apoio">Cruz vermelha</li></a>
+        <div class="flex_apoio">
+        <img src="img/Cruz vermelha.png" width="200">
+        <p>Sede Nacional, Lisboa<br>
+          Jardim 9 de Abril, 1 a 5<br>
+          1249-083 Lisboa - Portugal<br>
+          sede@cruzvermelha.org.pt<br><br>
+          Telefone: 213 913 900</p>
+        </div>
+        <a href="http://bvpombal.pt/" target="_blank"><li class="title_apoio">Bombeiros</li></a>
+        <div class="flex_apoio">
+        <img src="img/Bombeiros.png" width="200">
+        <p>R. Carlos Alberto de Mota Pinto,<br> 3100-492 Pombal<br><br>Telefone: 236 212 122</p>
+      </div>
+    </ul>
+</div>
+<footer>
+  <img src="img/LOGOS.PNG" alt="Logos" width="100%" height="50%">
+</footer>
+</body>
+</html>

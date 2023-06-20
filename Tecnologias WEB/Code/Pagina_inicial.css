@@ -1,0 +1,152 @@
+.mySlides {
+    margin-top: 5px;
+    height: 500px;
+    }
+
+
+
+.prev,.next {
+    cursor: pointer;
+    position: absolute;
+    top: 230px;
+    width: auto;
+    padding: 16px;
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    }
+
+.next {
+    right: 8px;
+    border-radius: 3px 0 0 3px;
+    }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    }
+
+
+
+
+
+/*Formataçâo do div*/
+#notice {
+    background-color: darkgray;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    }
+
+ul {
+    list-style-type: none;
+    }
+        
+#title {
+        margin: 10px 20px;
+        color: #14A79C;
+        font-size: 35px;
+        }
+
+.title_notice{font-style: oblique;font-size:20px; padding-bottom: 15px; padding-top: 15px; font-weight: bold;
+
+}
+
+
+/* Fim da formatação do div*/
+
+#notice ul{padding: 10px 20px;}
+
+#notice p{margin-left: 20px; background-color: rgb(190, 190, 190);border-radius: 5px;}
+
+#notice img{width: 280px;}
+
+.icon{font-size:15px;}
+
+.mySlides{width:100%;}
+
+#video{margin-left: 20%;}
+
+#notice div{display: flex; flex-direction: row;}
+
+#iframe{width: 480px; height: 315px;}
+
+
+
+
+@media screen and (max-width: 900px) {
+    
+    #notice div{display: flex; flex-direction: column;}
+  }
+
+@media screen and (max-width: 635px) {
+    
+    #video{margin-left: 10%;}
+  }
+
+@media screen and (max-width: 575px) {
+    
+    #iframe{width: 280px; height: 200px;}
+
+    .mySlides {
+        height: 300px;
+        }
+
+    .prev,.next{
+        top:130px;    }
+    
+  }
+
+@media screen and (max-width: 535px) {
+    
+    #notice img{width: 220px;}
+
+    #notice h2{font-size: 25px;}
+
+    .title_notice{font-size: 16px;}
+
+    #notice p{font-size: 14px;}
+
+
+    .mySlides {
+        height: 260px;
+        }
+
+    .prev,.next{
+        top:110px;  }
+
+    
+  }
+
+@media screen and (max-width: 440px) {
+    
+    #notice img{width: 160px;}
+
+    .mySlides {
+        height: 220px;
+        }
+
+    .prev,.next{
+        top: 90px; } 
+    
+
+  
+  }
+
+@media screen and (max-width: 330px) {
+
+    #iframe{width: 230px; height: 160px;}
+
+    #notice img{width: 120px;}
+
+    .mySlides {
+        height: 180px;
+        }
+
+    .prev,.next{
+        top:50px;  }
+    
+  }

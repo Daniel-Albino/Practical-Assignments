@@ -1,0 +1,339 @@
+
+/*Inicio de formatação dos gráficos*/
+/*------------Gráfico de barras horizontais--------------*/
+#chart_div{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+#container_chartdiv{
+    margin-left: 30px;
+}
+
+#container_chartdiv p{
+    padding: 20px;
+    display: none;
+    font-size: 15px;
+}
+
+#container_chartdiv h4{
+    background-color: #14A79C;
+    text-align: center;
+    margin-top: 0px;
+    padding: 10px ;
+
+}
+
+#container_chartdiv h4:hover{
+    cursor:default;
+}
+
+#container_chartdiv h4:hover p{
+    display: block;
+    background-color: rgb(216, 216, 216);
+}
+
+
+
+
+/*--------------Gráfico 3D-------------------------------*/
+
+#piechart_3d{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+#container_piechart{
+    margin:auto;
+    margin-top: 0;
+}
+
+#container_piechart p{
+    padding: 20px;
+    display: none;
+    font-size: 15px;
+}
+
+#container_piechart h4{
+    background-color: #14A79C;
+    text-align: center;
+    margin-top: 0px;
+    padding: 10px ;
+
+}
+
+#container_piechart h4:hover{
+    cursor:default;
+}
+
+#container_piechart h4:hover p{
+    display: block;
+    background-color: rgb(216, 216, 216);
+}
+
+
+
+/*-------------Gráfico de linhas----------------------------------*/
+
+#linechart_material{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+#container_linechart{
+    margin-left: 30px;
+}
+
+
+#container_linechart p{
+    padding: 20px;
+    display: none;
+    font-size: 15px;
+}
+
+#container_linechart h4{
+    background-color: #14A79C;
+    text-align: center;
+    margin-top: 0px;
+    padding: 10px ;
+
+}
+
+#container_linechart h4:hover{
+    cursor:default;
+}
+
+#container_linechart h4:hover p{
+    display: block;
+    background-color: rgb(216, 216, 216);
+}
+
+/*------------------Gráfico Donut-----------------------------*/
+
+#donutchart{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+#container_donut{
+    margin:auto;
+    margin-top: 0;
+}
+
+
+#container_donut p{
+    padding: 20px;
+    display: none;
+    font-size: 15px;
+}
+
+#container_donut h4{
+    background-color: #14A79C;
+    text-align: center;
+    margin-top: 0px;
+    padding: 10px ;
+}
+
+#container_donut h4:hover{
+    cursor:default;
+}
+
+#container_donut h4:hover p{
+    display: block;
+    background-color: rgb(216, 216, 216);
+}
+
+/*-----------------Table------------------------------*/
+
+#container_col{
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#column_chart{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    width:400px;
+    margin:auto;
+}
+
+
+
+#container_col p{
+    padding: 20px;
+    display: none;
+    font-size: 15px;
+}
+
+#container_col h4{
+    background-color: #14A79C;
+    text-align: center;
+    margin-top: 0px;
+    padding: 10px ;
+
+}
+
+#container_col h4:hover{
+    cursor:default;
+}
+
+#container_col h4:hover p{
+    display: block;
+    background-color: rgb(216, 216, 216);
+}
+/*Fim de formatação de gráficos*/
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*Início da formatação do div dos dois primeiros gráficos*/
+
+#charts_1{
+    margin:20px;
+    border: 10px solid #14A79C;
+    display: flex;
+    flex-direction: row;
+}
+
+/*Fim da formatação do div dos dois primeiros gráficos*/
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*Início da formatação do div dos dois segundos gráficos*/
+
+
+#charts_2{
+    margin:20px;
+    border: 10px solid #14A79C;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/*Fim da formatação do div dos dois segundos gráficos*/
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*Início da formatação do div da tabela*/
+
+
+
+#column{
+    margin:20px;
+    border: 10px solid #14A79C;
+    
+}
+
+
+
+/*Fim da formatação do div da tabela*/
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*Media Queries*/
+
+@media screen and (max-width:1300px){
+    
+    #container_chartdiv{
+        margin-left: 0px;
+    }
+
+    #chart_div{
+        width: 390px;
+        height: 380px;
+        border: 1px solid black;
+    }
+
+    #piechart_3d{
+        width: 390px;
+        height: 380px;
+        border: 1px solid black;
+    }
+
+/*-------Charts-2---------*/
+
+    #container_linechart{
+        margin-left: 0px;
+    }
+    
+    #linechart_material{
+        width: 390px;
+        height: 380px;
+        border: 1px solid black;
+    }
+
+    
+    #donutchart{
+        width: 390px;
+        height: 380px;
+        border: 1px solid black;
+    }
+}
+
+
+
+@media screen and (max-width:900px){
+    
+    #charts_1{
+        flex-direction: column;
+    }
+    
+    #charts_2{
+        flex-direction: column;
+    }
+
+    #container_donut h4{
+        margin-top: 10px;
+    }
+
+
+    #container_piechart h4{
+        margin-top: 10px;
+        
+    }
+
+    #chart_div{
+        margin:auto;
+    }
+
+    #piechart_3d{
+        margin:auto;
+    }
+
+    #linechart_material{
+        margin:auto;
+    }
+
+    #donutchart{
+        margin:auto
+    }
+}
+
+@media screen and (max-width:675px){
+
+
+    #column_chart{
+        
+        width:280px;
+        margin:auto;
+    }
+
+
+}

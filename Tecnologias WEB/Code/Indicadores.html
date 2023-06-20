@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/ICON.png">
+    <link rel="stylesheet" href="Barstyle.css">
+    <link rel="stylesheet" href="stylebar.css">  
+    <link rel="stylesheet" href="Indicadores.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>USF-O que fazemos</title>
+    
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawMultSeries);
+
+function drawMultSeries() {
+      var data = google.visualization.arrayToDataTable([
+        ['Faixa Etária', 'Masculino', 'Feminino'],
+        ['0-5', 125, 140],
+        ['6-10', 166, 183],
+        ['11-14', 201, 232],
+        ['15-19', 278, 295],
+        ['20-29', 254, 247],
+        ['30-39', 276, 280],
+        ['40-49', 335, 359],
+        ['50-59', 367, 380],
+        ['60-69', 319, 335],
+        ['70-79', 243, 264],
+        ['80-89', 126, 140],
+        ['90-99', 20, 35],
+      ]);
+
+      var options = {
+        title: ' ',
+        chartArea: {width: '50%'},
+        colors: ['rgb(90,155,213)','rgb(237,124,48)'],
+        hAxis: {
+          title: 'Total',
+          minValue: 0
+        },
+        vAxis: {
+          title: 'Faixa Etária'
+        }
+      
+      
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+  </script>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Sexo', 'Total de utentes por sexo'],
+      ['Masculino',2710],
+      ['Feminino', 2890],
+    ]);
+
+    var options = {
+      chartArea: {width: '100%'},
+      title: '',
+      is3D: true,
+      colors: ['rgb(90,155,213)','rgb(237,124,48)'],
+      
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+    chart.draw(data, options);
+      }
+</script>
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Ano', 'Total de consultas'],
+      ['2018',  3445.68],
+      ['2019',  3485.44],
+      ['2020',  3496.08]
+    ]);
+
+    var options = {
+      chartArea: {width: '100%'},
+      title: ' ',
+      pieHole: 0.4,
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+    chart.draw(data, options);
+  }
+</script>
+<script>
+      google.charts.load('current', {'packages':['line']});
+      google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      
+      var cssClassNames={
+        'here':'italic-darkblue-font',
+      }
+
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Trimestre');
+      data.addColumn('number', 'Mulheres entre 50 – 69 anos com mamografia');
+      data.addColumn('number', 'Mulheres entre 25 – 64 anos com colpocitologia');
+      data.addColumn('number', 'Entre 50 – 74 anos com rastreio de cancro colorretal');
+
+      data.addRows([
+        [0,  23.05, 17.68, 14.55],
+        [3,  15.83, 10.52, 12.87],
+        [6,  7.8,   5.33, 10.25],
+        [9,  12.50, 12.77, 12.46],
+        [12, 18.33, 17.58, 12.21],
+      ]);
+
+      var options = {
+        chartArea: {width: '100%'},
+        chart: {
+          title: ' ',
+          subtitle: 'Em Percentagem (%)'
+        },
+
+       
+      };
+
+      var chart = new google.charts.Line(document.getElementById('linechart_material'));
+
+      chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+
+
+</script>
+
+<script>
+// Load Charts and the corechart and barchart packages.
+google.charts.load('current', {'packages':['corechart']});
+
+// Draw the pie chart and bar chart when Charts is loaded.
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+
+  var data = new google.visualization.DataTable();
+  data.addColumn('string', 'Anos');
+  data.addColumn('number', 'Euros (€)');
+  data.addRows([
+    ['2020', 2012],
+    ['2019', 1625],
+    ['2018', 1356],
+    ['',0]
+
+   
+  ]);
+
+  var barchart_options = {title:'Custo Médio de Medicamentos (2018-2020)',
+                       
+                       legend: 'none'};
+        var barchart = new google.visualization.BarChart(document.getElementById('column_chart'));
+        barchart.draw(data, barchart_options);
+      }
+</script>
+  
+</head>
+<body>
+<!--Inicio da barra de navegação-->
+<div>
+    <img id="logo" src="img/icon_principal.JPG" alt="USF Marquês/São Martinho" width="250" height="100">
+  </div>
+  <div id="bar">
+  <div class="topnav" id="myTopnav">
+    <a href="Pagina_inicial.html" class="active">Início</a>
+    <a href="Quem somos.html">Quem somos</a>
+    <div class="dropdown">
+      <button class="dropbtn">O que fazemos
+        <span class="fa fa-caret-down"></span>
+      </button>
+      <div class="dropdown-content">
+        <a href="O que fazemos.html">O que fazemos</a>
+        <a href="Fazemos_consultas.html">Consultas</a>
+      </div>
+    </div> 
+    <a href="Indicadores.html">Indicadores da USF</a>
+    <a href="Recursos.html">Recursos</a>
+    <div class="dropdown">
+      <button class="dropbtn">Mais
+        <span class="fa fa-caret-down"></span>
+      </button>
+      <div class="dropdown-content">
+        <a href="Mais_apoio.html">Apoio</a>
+        <a href="Mais_informações.html">Informações</a>
+      </div>
+    </div> 
+    <a href="e_consulta.html">E-consulta</a>
+    <a href="Login.html" target="_blank" id="medialogin"><span class="fa fa-fw fa-user"></span>Login</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  <!--Fim da barra de navegação-->
+
+
+<!-------------------------------2 primeiros gráficos--------------------------->
+<div id="charts_1">
+
+  <div id="container_chartdiv">
+      <h4>Nº de Utentes 
+      <p>O gráfico abaixo representa <br>o número de utentes da unidade de saúde de Pombal<br> dividido por Faixa Etária <br>e por sexo masculino (Azul) e sexo feminino (Laranja).</p> </h4>
+      <div id="chart_div"></div>
+  </div>
+  <div id="container_piechart">
+      <div id="h4">
+      <h4>Percentagem de Utentes do sexo Masculino e Feminino
+      <p>O gráfico abaixo representa <br>a percentagem de utentes do sexo masculino (Azul)<br> e sexo de feminino (Laranja).</p></h4>
+    </div>
+      <div id="piechart_3d"></div>
+  </div>
+</div>
+
+<!----------------------------------------------------------------------------->
+
+<!---------------------------2 segundos gráficos------------------------------->
+
+<div id="charts_2">
+
+  <div id="container_linechart">
+      <h4>Realização de rastreios<p>Mamografias, colpocitologia,<br> rastreio cancro colorretal (em percentagem %)</p></h4>
+      <div id="linechart_material"></div>
+  </div>
+
+  <div id="container_donut">
+      <h4>Taxa de utilização de consultas<p>Taxa de utilização global de consultas em relação à comunidade local</p></h4>
+      <div id="donutchart"></div>
+  </div>
+
+</div>
+
+<!----------------------------------------------------------------------------->
+
+<!------------------------------------table------------------------------------>
+<br>  
+
+<div id="column"> 
+
+  <div id="container_col">
+  <h4>Custo Médio de Medicamentos<p>Esta tabela representa <br>a média dos gastos em medicamentos por utente<br> em cada ano correspondente.</p></h4>
+  <div id="column_chart"></div>
+  </div>
+</div>
+
+  <footer>
+    <img src="img/LOGOS.PNG" alt="Logos" width="100%" height="50%">
+</footer>  
+</body>
+</html>

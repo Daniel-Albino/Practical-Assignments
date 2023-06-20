@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/ICON.png">
+    <link rel="stylesheet" href="Barstyle.css">
+    <link rel="stylesheet" href="stylebar.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Formulario.css">
+    <title>Consultas</title>
+</head>
+<body>
+<!--Inicio da barra de navegação-->
+<div>
+    <img id="logo" src="img/icon_principal.JPG" alt="USF Marquês/São Martinho" width="250" height="100">
+  </div>
+  <div id="bar">
+  <div class="topnav" id="myTopnav">
+    <a href="Pagina_inicial.html" class="active">Início</a>
+    <a href="Quem somos.html">Quem somos</a>
+    <div class="dropdown">
+      <button class="dropbtn">O que fazemos
+        <span class="fa fa-caret-down"></span>
+      </button>
+      <div class="dropdown-content">
+        <a href="O que fazemos.html">O que fazemos</a>
+        <a href="Fazemos_consultas.html">Consultas</a>
+      </div>
+    </div> 
+    <a href="Indicadores.html">Indicadores da USF</a>
+    <a href="Recursos.html">Recursos</a>
+    <div class="dropdown">
+      <button class="dropbtn">Mais
+        <span class="fa fa-caret-down"></span>
+      </button>
+      <div class="dropdown-content">
+        <a href="Mais_apoio.html">Apoio</a>
+        <a href="Mais_informações.html">Informações</a>
+      </div>
+    </div> 
+    <a href="e_consulta.html">E-consulta</a>
+    <a href="Login.html" target="_blank" id="medialogin"><span class="fa fa-fw fa-user"></span>Login</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  
+  
+  <!--Fim da barra de navegação-->
+  <form id="form" action="" method="POST" >
+    
+    <fieldset> 
+        <legend id="titulo">Formulário de atribuição de Médico de Família</legend>
+        <label>Nome:</label> <input type="text" class="espaço" id="campo" name="nomecompleto" size="50" placeholder="Nome completo" autofocus required maxlength="100"/>   
+        <span class="email"><label >E-mail:</label> <input type="email" class="espaço" id="campo4" name="eml" size="50" placeholder="Email" required/></span><br>
+        <label>Idade:</label>
+        <input type="number" class="espaço" id="quantity" name="idade" min="1" max="120" placeholder="Idade" required><br><br>
+        <pre><label>Sexo:</label>   <input type="radio" id="male" name="gender" value="male" required><label id="male" for="male">Masculino</label>   <input type="radio" id="female" name="gender" value="female" required><label id="female" for="female">Feminino</label></pre><br>
+        <label>Morada:</label> <input type="text" class="espaço" id="campo2" name="morada" size="50" placeholder="Morada" required/>  
+        <span class="email"><label>Código Postal:</label> <input type="text" title="e.g. 1234-123" class="espaço" id="campo5" name="codigo_postal" size="30" placeholder="Código Postal (e.g. 1234-123)" pattern="[0-9]{4}\-[0-9]{3}"></span><br>
+  
+        <label>Cartão de Identificação:</label> <input title="e.g.12345678 1AZ 1" type="text" class="espaço" id="campo5" name="cartao_cidadao" size="35" placeholder="Cartão de cidadão (e.g.12345678 1AZ 1)" pattern="[0-9]{8} [0-9]{1}[A-Z]{2} [0-9]{1}"  required/>
+        <span class="email"><label>Localidade:</label> <input type="text" class="espaço" id="campo3" name="localidade" size="40" placeholder="Localidade (opcional)"/></span><br>
+        
+        <label>Telemóvel:</label>
+        <input type="tel" class="espaço" id="campo5" name="telefone" size="25" placeholder="Nº de telemóvel (opcional)" pattern="[0-9]{9}" />
+        <br><br>
+        <label>Escolha um Médico de família:</label><br><br>
+        <select name="s2" id="selecionar">
+          <option value="1">Dr. Luís Morato</option>
+          <option value="2">Dra. Isabel Lopes</option>
+          <option value="3">Dr. Fátima Lopes</option>
+        </select><br><br><br><br>
+        <textarea name="c1" class="campo7" id="caixadetexto" maxlength="10000" placeholder="Introduza a sua sugestão..." rows="20" cols="100"></textarea><br><br>
+        <input type="checkbox" class="campo7" id="campo6" name="cb1" value="valor1" required><label class="select">Eu aceito os termos e condições</label>  <br><br>
+        <input id="submit" type="submit" name="enviar" value="Enviar">
+    </fieldset>
+    </form>
+    
+    <footer>
+      <img src="img/LOGOS.PNG" alt="Logos" width="100%" height="140px">
+  </footer>
+ 
+</body>
+</html>

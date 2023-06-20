@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/ICON.png"> 
+    <link rel="stylesheet" href="Barstyle.css">
+    <link rel="stylesheet" href="stylebar.css">
+    <link rel="stylesheet" href="Pagina_inicial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <title>USF Marquês/S.Martinho-Pombal</title>
+ 
+</head>
+<body>
+
+<div>
+  <img id="logo" src="img/icon_principal.JPG" alt="USF Marquês/São Martinho" width="250" height="100">
+</div>
+
+<!--Inicio da barra de navegação-->
+<div id="bar">
+
+  <div class="topnav" id="myTopnav">
+    <a href="Pagina_inicial.html" class="active">Início</a>
+    <a href="Quem somos.html">Quem somos</a>
+
+      <div class="dropdown">
+          <button class="dropbtn">O que fazemos
+          <span class="fa fa-caret-down"></span>
+          </button>
+        <div class="dropdown-content">
+          <a href="O que fazemos.html">O que fazemos</a>
+          <a href="Fazemos_consultas.html">Consultas</a>
+        </div>
+      </div> 
+
+    <a href="Indicadores.html">Indicadores da USF</a>
+    <a href="Recursos.html">Recursos</a>
+
+      <div class="dropdown">
+          <button class="dropbtn">Mais
+          <span class="fa fa-caret-down"></span>
+          </button>
+        <div class="dropdown-content">
+        <a href="Mais_apoio.html">Apoio</a>
+        <a href="Mais_informações.html">Informações</a>
+        </div>
+      </div> 
+
+  <a href="e_consulta.html">E-consulta</a>
+  <a href="Login.html" target="_blank" id="medialogin"><span class="fa fa-fw fa-user"></span>Login</a>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<!--Fim da barra de navegação-->
+
+<!--slideshow-->
+    <div class="img_slide">
+        <a href="https://www.sns.gov.pt/wp-content/uploads/2020/12/20201217_Plano-Vacinac%CC%A7ao.pdf" target="_blank"><img class="mySlides" src="img/Covid_1.jpeg" alt="Covid-1ºfase" ></a>
+        <img class="mySlides" src="img/Novo_centro_1.jpg" alt="Novo centro">
+        <img class="mySlides" src="img/Slide1-3.jpg" alt="Covid">
+        <img class="mySlides" src="img/Regra_dos_5.png" alt="Regra_dos_5">
+        <a href="https://stayawaycovid.pt/?cn-reloaded=1" target="_blank"><img class="mySlides" src="img/stayaway.png" alt="Covid"></a>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  
+<script>
+        var myIndex = 0;
+        slide();
+        
+        function slide() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i =0; i < x.length; i++) {
+            x[i].style.display = "none";    
+          }
+          myIndex++;
+          if (myIndex > x.length) {
+            myIndex = 1
+          }    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(slide, 5000); 
+        }
+</script>
+
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      slides[slideIndex-1].style.display = "block"; 
+    }
+</script>
+<!--slideshow-->
+<br><br><br>
+<!--INICIO GLOBAL-->
+
+<div id="notice">
+    
+  <h2 id="title">Notícias</h2>
+      <ul>
+        <li class="title_notice">Acompanhe tudo ao minuto, sobre a Covid-19</li>
+          <div>
+            <a href="https://www.rtp.pt/noticias/mundo/covid-19-a-situacao-ao-minuto-do-novo-coronavirus-no-pais-e-no-mundo_e1289339" target="_blank"><img src="img/RTP.jpg"></a>
+            <p>A 1ºFase, já chegou e continuam<br> a ser vacinado os grupos de risco,<br>no entanto não a certeza quanto aos<br> restantes grupos de pessoas, mas acreditam<br> ser num futuro próximo.<br> Clique na imagem para acompanhar<br> todos os desenvolvimentos sobre a Covid-19.</p>
+          </div>
+        <li class="title_notice">Investimento Recente</li>
+          <div>
+            <img src="img/Novo_centro.jpg">
+            <p>Face à Pandemia a USF de Pombal<br> recentemente, investiu nas suas instalações<br> e serviço, para uma melhor prestação <br>de auxilio.</p>
+          </div>
+      </ul>
+</div>
+
+    <br><br><br>
+
+<div id="video">
+
+    <iframe id="iframe" src="https://www.youtube.com/embed/1zGO80BSH0k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div><br>
+
+<footer>
+
+    <img src="img/LOGOS.PNG" alt="Logos" width="100%" height="50%">
+
+</footer> 
+
+</body>
+</html>

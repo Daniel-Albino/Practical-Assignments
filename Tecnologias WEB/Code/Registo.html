@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/ICON.png">
+	<link rel="stylesheet" href="Loginstyle.css">  
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>USF-Registo</title>
+
+</head>
+<body>	
+	
+<div id="global">   
+  <div id="logo">
+	  <img src="img/icon_principal.JPG" width="150" >
+  </div>
+	  <br>
+<h4>Faça o registo para aceder aos serviços da USF-Pombal</h4>
+<div id="container">
+	<form name="login" method="POST">
+
+	<label for="nome">Nome de utilizador</label><br>
+	<input class="form-element" type="text" id="utilizador" placeholder="Nome" name="utilizador" size="35" required/><br><br>
+
+	<lable for="password">Senha</lable><br>
+    <input class="form-element" type="password" id="password" placeholder="Senha" name="password" size="35" required/><br><br>
+
+    <label>E-mail:</label> 
+    <input class="form-element" type="email" class="espaço" id="campo4" name="eml" size="35" placeholder="Email"/><br><br>
+
+	<input id="elem_sub" type="button" value="Registar" onclick="register(this.form)"/>
+	 
+ </form>
+</div>
+
+<script src="login.js"></script>
+
+    
+</body>
+</html>

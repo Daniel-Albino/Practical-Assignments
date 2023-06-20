@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/ICON.png">
+    <link rel="stylesheet" href="Barstyle.css">
+    <link rel="stylesheet" href="stylebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <title>Mais- Informações</title>    
+    <style>
+
+#Title_1, #Title_2, #Title_3, #Title_4 {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+#Title_1:hover, #Title_2:hover, #Title_3:hover, #Title_4:hover {
+  background-color: #ccc; 
+}
+
+#Para_1, #Para_2, #Para_3, #Para_4  {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+    </style>
+  
+</head>
+<body>
+<!--Inicio da barra de navegação-->
+<div>
+    <img id="logo" src="img/icon_principal.JPG" alt="USF Marquês/São Martinho" width="250" height="100">
+  </div>
+  <div id="bar">
+  <div class="topnav" id="myTopnav">
+    <a href="Pagina_inicial.html" class="active">Início</a>
+    <a href="Quem somos.html">Quem somos</a>
+    <div class="dropdown">
+      <button class="dropbtn">O que fazemos
+        <span class="fa fa-caret-down"></span>
+      </button>
+      <div class="dropdown-content">
+        <a href="O que fazemos.html">O que fazemos</a>
+        <a href="Fazemos_consultas.html">Consultas</a>
+      </div>
+    </div> 
+    <a href="Indicadores.html">Indicadores da USF</a>
+    <a href="Recursos.html">Recursos</a>
+    <div class="dropdown">
+      <button class="dropbtn">Mais
+        <span class="fa fa-caret-down"></span>
+      </button>
+      <div class="dropdown-content">
+        <a href="Mais_apoio.html">Apoio</a>
+        <a href="Mais_informações.html">Informações</a>
+      </div>
+    </div> 
+    <a href="e_consulta.html">E-consulta</a>
+    <a href="Login.html" target="_blank" id="medialogin"><span class="fa fa-fw fa-user"></span>Login</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  
+  
+  <!--Fim da barra de navegação-->
+  <h2>Perguntas Frequentes</h2>
+  <button id="Title_1" >1-O que é a COVID-19?</button>
+  <div id="Para_1">
+    <p>COVID-19 <sub>(Coronavirus)</sub> significa Doença por Coronavírus – 2019 e refere-se ao nome da doença causada pelo novo Coronavírus (também designado por SARS-CoV-2).
+      Este vírus foi identificado pela primeira vez em dezembro de 2019 na China e nunca tinha sido identificado anteriormente em seres humanos.</p>
+  </div>
+  
+  <button id="Title_2">2–De que forma se transmite o COVID-19?</button>
+  <div id="Para_2">
+    <p>Transmite-se por contacto próximo com pessoas infetadas pelo vírus ou superfícies e objetos contaminados.
+      Este vírus transmite-se através de gotículas libertadas pelo nariz ou boca quando tossimos ou espirramos. As gotículas podem atingir diretamente a boca, nariz e olhos de quem estiver próximo OU podem depositar-se em objetos/ superfícies que outras pessoas ao tocar e depois tocar nos olhos, nariz ou boca com as mãos se podem infetar.</p>
+  </div>
+  
+  <button id="Title_3">3-Como me posso proteger?</button>
+  <div id="Para_3">
+    <p>
+        <ul>
+          <li>Higiene das mãos: Deve lavá-las sempre que se assoar, espirrar, tossir ou após contacto direto com qualquer pessoa ou superfícies. Deve lavá-las durante 20 segundos, com água e sabão ou com solução à base de álcool a 70%</li>
+          <li>Etiqueta Respiratória - tapar o nariz e a boca quando espirrar ou tossir, com um lenço de papel ou com o antebraço,<strong>Nunca</strong> com as mãos,</li>
+          <li>Evitar tocar na cara com as mãos</li>
+          <li>Evitar partilhar objetos pessoais ou comida em que tenha tocado</li>
+          <li>Evitar contacto social desnecessário</li>
+          <li>Evitar contacti físico directo</li>
+          <li>Manter contacto frente a frente a uma distância de 2 metros</li>
+          <li>Usar máscara em locais públicos</li>
+        </ul>
+    </p>
+  </div>
+  <button id="Title_4">4-Quais são os sintomas desta doença?</button>
+  <div id="Para_4">
+    <p>A maioria das pessoas infetadas apresentam sintomas de infeção respiratória aguda com sintomas/sinais ligeiros a moderados: Tosse ou Febre(>37.5ºC) ou Falta de ar</p>
+  </div>
+  <br><br><br><br><br><br>
+  <footer >
+    <img src="img/LOGOS.PNG" alt="Logos" width="100%" height="50%">
+</footer>
+  <script>
+    document.getElementById('Title_1').addEventListener('click', function(){
+      
+      if (document.getElementById('Para_1').style.display === "block") {
+        document.getElementById('Para_1').style.display = "none";
+    } else {
+      document.getElementById('Para_1').style.display = "block";
+    }
+  });
+
+  document.getElementById('Title_2').addEventListener('click', function(){
+      
+      if (document.getElementById('Para_2').style.display === "block") {
+        document.getElementById('Para_2').style.display = "none";
+    } else {
+      document.getElementById('Para_2').style.display = "block";
+    }
+  });
+
+  document.getElementById('Title_3').addEventListener('click', function(){
+      
+      if (document.getElementById('Para_3').style.display === "block") {
+        document.getElementById('Para_3').style.display = "none";
+    } else {
+      document.getElementById('Para_3').style.display = "block";
+    }
+  });
+
+  document.getElementById('Title_4').addEventListener('click', function(){
+      
+      if (document.getElementById('Para_4').style.display === "block") {
+        document.getElementById('Para_4').style.display = "none";
+    } else {
+      document.getElementById('Para_4').style.display = "block";
+    }
+  });
+  </script>
+</body>
+</html>
+
