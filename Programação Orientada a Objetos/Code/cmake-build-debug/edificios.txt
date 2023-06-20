@@ -1,0 +1,7 @@
+Edifícios:
+		a) Mina de ferro (mnF);
+		b) Mina de carvão (mnC);
+		c) Central elétrica (elec);
+		d) Bateria (bat);
+		e) Fundição (fun);
+		f) Edificio-X (EdX).

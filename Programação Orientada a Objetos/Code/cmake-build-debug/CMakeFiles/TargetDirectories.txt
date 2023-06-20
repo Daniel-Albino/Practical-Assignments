@@ -1,0 +1,3 @@
+/cygdrive/c/Users/Utilizador/Desktop/TP/POO/POO/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/Users/Utilizador/Desktop/TP/POO/POO/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/c/Users/Utilizador/Desktop/TP/POO/POO/cmake-build-debug/CMakeFiles/POO_2.dir

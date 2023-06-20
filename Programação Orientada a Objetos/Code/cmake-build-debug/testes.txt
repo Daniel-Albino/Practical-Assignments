@@ -1,0 +1,11 @@
+liga 1 1
+cons mnF 1 1
+cons mnF 1 1
+cons mnc 1 1
+cons mnC 2 3
+liga 3 3
+des 3 3
+des 1 1
+liga 1 1
+list 1 1
+next

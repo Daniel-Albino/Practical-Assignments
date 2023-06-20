@@ -1,0 +1,4 @@
+Trabalhadores:
+        a) Operário (oper);
+        b) Lenhador (len);
+        c) Mineiro (miner).

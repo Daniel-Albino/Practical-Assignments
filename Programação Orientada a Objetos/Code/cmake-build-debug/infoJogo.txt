@@ -1,0 +1,84 @@
+Informações necessárias para conseguir jogar este simulador:
+	1º Comandos:
+		- exec <nomeFicheiro>: Executa um conjunto de comandos existentes em nomeFicheiro;
+		- cons <tipo> <linha> <coluna>: constrói um edifício de um dado tipo na zona posicionada na linha e coluna;
+		- liga <linha> <coluna>: Liga o edifício de uma zona;
+		- des <linha> <coluna>: desliga o edifício de uma zona;
+		- move <id> <linha> <coluna>: Move o trabalhador para uma zona;
+		- vende <tipo> <quanto>: Vende recursos de um tipo de acordo com quanto se pretende vender;
+		- cont <tipo>: Contrata um trabalhador de um dado tipo;
+		- list <linha> <coluna>: Obtém a informação existente de uma zona;
+		- vende <linha> <coluna>: Vende o edifício de uma zona, recupera o € gasto mas não os recursos e os que estão armazenados são vendidos;
+		- levelup <linha> <coluna>: Sobre de nivel o edificio de uma zona;
+		- next: Termina a fase de recolha de comandos e desencadeia as ações necessárias ao seu processamento;
+		- save <name>: Grava o estado do jogo;
+		- load <name>: Recupera um dado estado do jogo em memória;
+		- apaga <nome>: Apaga um determinado savegame de memória.
+
+	2º Zonas:
+		a) Deserto (dsr):
+			- Dunas de areia;
+			- Permite a construção de qualquer edifício;
+			- As minas reduzem 50% da produção.
+		b) Pastagem (pas):
+			- Permite a construção de qualquer edifício;
+			- Os funcionários não pedem demissão.
+		c) Floresta (flr):
+			- Permite a construção de qualquer edifício;
+			- Tem 20 a 40 árvores (decidido aleatoriamente);
+			- A cada 2 dias nasce uma árvore nova até 100 árvores;
+			- A floresta produz 1Kg de madeira por cada lenhador;
+			- A madeira não tem limite de armazenamento;
+			- Se forem construídos edifícios morre uma árvore por dia e não crescem mais.
+		d) Montanha (mnt):
+			- Permite a construção de qualquer edifício (o preço é o dobro);
+			- As minas aumentam em 100% a produção;
+			- Produzem espontaneamente ferro a 0.1Kg por cada funcionário (pode ser um qualquer);
+			- Não existe limite de armazenamento do ferro;
+			- A demissão aumenta em 5%.
+		e) Pântano (pnt):
+			- Permite a construção de qualquer edifício;
+			- A cada 10 dias o edifício afunda e desaparece;
+			- Os funcionários pedem a demissão passados 10 dias.
+
+	3º Edifícios:
+		a) Mina de ferro (mnF):
+			- Obtém ferro;
+			- Construída usando 10 vigas de madeira (pode ser substituído por 10€ por viga);
+			- Produz 2 Kg/dia;
+			- 5 níveis (+1Kg/dia e custa 15€ e 1 viga (não pode ser substituído por €));
+			- Só produz se existir pelo menos 1 mineiro;
+			- Existe 15% a cada dia de desabar;
+			- Armazena 100 Kg (+10 Kg por nível) (Quando chega ao seu limite para de trabalhar).
+
+		b) Mina de carvão (mnC):
+			- Obtém carvão;
+			- Construída usando 10 vigas de madeira (pode ser substituída por 10€ cada vida);
+			- Produz 2 Kg de carvão por dia;
+			- 5 níveis (+1Kg/dia e custa 10€ e 1 viga (não pode ser substituída por €));
+			- Só produz se estiver pelo menos 1 mineiro;
+			- Existe 10% a cada dia de desabar;
+			- Armazena 100 Kg (+10 Kg por nível) (Quando chega ao seu limite para de trabalhar);
+
+		c) Central elétrica (elec):
+			- Queima 1Kg de madeira -> produz 1Kg carvão e 1 KWh de eletricidade;
+			- Só produz se existir 1 operário;
+			- Armazena 100 Kg de carvão;
+			- A eletricidade é armazenada na bateria (junto a central = numa zona ao pé da zona onde está a central);
+			- Tem que estar ao pé de uma zona de floresta sendo a madeira obtida a partir dessa floresta.
+			- Custa 15€.
+
+		d) Bateria (bat):
+			- Capacidade de 100 KWh;
+			- Custa 10€ e 10 vigas;
+			- Adquire a energia produzida das centrais elétricas nas zonas ao pé;
+			- 5 níveis (custa 5€ cada nível).
+
+		e) Fundição (fun):
+			- Obtém aço a partir do ferro e carvão (Ver quanto é que consome de ferro e carvão);
+			- Tem que estar numa zona onde estão minas de ferro e carvão ou uma central elétrica (por causa do carvão);
+			- Necessita de um operário na zona;
+			- Custa 10€.
+
+        f) Edificio-X (EdX):
+

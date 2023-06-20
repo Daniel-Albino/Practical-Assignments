@@ -1,0 +1,9 @@
+mnF 150
+mnC 150
+elec 20
+fun 15
+bat 15
+EdX 25
+len 20
+miner 20
+oper 20
